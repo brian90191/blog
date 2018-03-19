@@ -36,11 +36,7 @@ disqus_shortname: "brian90191"
 
 
 url: "https://brian90191.github.io/blog"
-<<<<<<< .merge_file_a03756
-imgrepo: "http://blog.rainyalley.com/static/img"
-=======
 imgrepo: "https://brian90191.github.io/blog/static/img"
->>>>>>> .merge_file_a12492
 
 
 #url: "http://127.0.0.1:4000"
