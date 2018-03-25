@@ -15,19 +15,17 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
 ~~~html
 <div class="gG0TJc">
     <h3 class="r dO0Ag">
-        <a class="l lLrAF" href="https://www.udn.com/news/story/7002/3049761" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://www.udn.com/news/story/7002/3049761&amp;ved=0ahUKEwjO7r-R14XaAhUFp5QKHcmXDTAQqQIIJSgAMAA">
-            <em>NBA</em>／厄文將動左膝手術回歸時間未定
-        </a>
+        <a class="l lLrAF" href="https://newtalk.tw/news/view/2018-03-24/118588" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://newtalk.tw/news/view/2018-03-24/118588&amp;ved=0ahUKEwimoYXH-YbaAhXLXrwKHSK4AN8QqQIIVCgAMAU">5年21個新創基地
+            <em>柯文哲</em>：創新是台灣唯一出路</a>
     </h3>
     <div class="slp">
-        <span class="xQ82C e8fRJf">udn 聯合新聞網</span>
+        <span class="xQ82C e8fRJf">新頭殼</span>
         <span class="v0c3xd">-</span>
-        <span class="f nsa fwzPFf">10 小時前</span>
+        <span class="f nsa fwzPFf">21 小時前</span>
     </div>
-    <div class="st">
-        厄文（左）將會接受左膝微創手術，藉此減輕膝蓋的疼痛感，復出時間未定。
-        <em>NBA</em> 分享. facebook. 根據塞爾蒂克的官方消息，當家球星厄文（Kyrie Irving）將會接受左膝微創手術，藉此減輕膝蓋的疼痛感。不過厄文會何時復出，恐怕要等手術完成後才能有確切時間。 厄文本季一直受到左膝傷困擾，單是三月份就缺席了6場比賽，近期已經&nbsp;...
-    </div>
+    <div class="st">台北市市長
+        <em>柯文哲</em>今日出席全國大專院校商業個案大賽，並指出創新是台灣唯一的出路。 圖：翻攝自Flickr/zhenghu feng開放權限. 台北市市長
+        <em>柯文哲</em>今(24)日出席全國大專院校商業個案大賽( ATCC )，除與企業領袖對談外，更於致詞時表示，計劃未來每年開設2到3個新創基地，預計未來5年內，北市最少會有21個新創基地。 此次第16&nbsp;...</div>
 </div>
 ~~~
 
@@ -40,33 +38,23 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
         <tr>
             <td valign="top" style="width:516px">
                 <h3 class="r">
-                    <a href="/url?q=https://technews.tw/2018/03/16/the-leader-of-5g-tech-ericsson-will-help-chonghwa-telecom-to-5g-network-possible-in-the-end-of-2018/&amp;sa=U&amp;ved=0ahUKEwiKoNqI4ILaAhXJNJQKHTaGDDYQqQIIJygAMAM&amp;usg=AOvVaw2NCPP3YIn2EJTFLFIrNRZE">5G 王者愛立信將助
-                        <b>中華電信</b>年底推5G 示範網路
-                    </a>
+                    <a href="/url?q=https://newtalk.tw/news/view/2018-03-24/118588&amp;sa=U&amp;ved=0ahUKEwjx29Dv-obaAhUDF5QKHbDFDdMQqQIIPSgAMAU&amp;usg=AOvVaw1gl8zS6uqDn2yMujpzFwem">5年21個新創基地
+                        <b>柯文哲</b>：創新是台灣唯一出路</a>
                 </h3>
                 <div class="slp">
-                    <span class="f">科技新報 TechNews - 2018年3月16日</span>
+                    <span class="f">新頭殼 - 21 小時前</span>
                 </div>
-                <div class="st">我們聽到很多關於5G 技術或是創新應用，也很期待5G 帶來的更快速，低延遲的連線，驅動很多以前不敢想像的應用。如今在台灣，5G 電信網路總算要來，根據供應全台電信業者所需通訊技術方案廠商愛立信所言，
-                    <b>中華電信</b>最快今年(2018) 底推出5G 行動網路服務。
+                <div class="st">台北市市長
+                    <b>柯文哲</b>今日出席全國大專院校商業個案大賽，並指出創新是台灣唯一的出路。 圖：翻攝自Flickr/zhenghu feng開放權限. 台北市市長
+                    <b>柯文哲</b>今(24)日出席全國大專院校商業個案大賽( ATCC )，除與企業領袖對談外，更於致詞時表示，計劃未來每年開設2到3個新創基地，預計未來5年內，北市最少會有21個新創基地。 此次第16&nbsp;...
                 </div>
-                <a href="/url?q=https://newtalk.tw/news/view/2018-03-16/117637&amp;sa=U&amp;ved=0ahUKEwiKoNqI4ILaAhXJNJQKHTaGDDYQ-AsIKSgAMAM&amp;usg=AOvVaw0PchLFBASmlwIlrMEzMClA">5G台灣用的到
-                    <b>中華電信</b>最快年底推出
-                </a>
-                <span class="f">新頭殼</span>
-                <br>
-                <a href="/url?q=http://www.chinatimes.com/newspapers/20180317001058-260210&amp;sa=U&amp;ved=0ahUKEwiKoNqI4ILaAhXJNJQKHTaGDDYQ-AsIKigBMAM&amp;usg=AOvVaw21H3Of9kl4N0wMrekocU64">愛立信攜手
-                    <b>中華</b>電年底推出5G示範場域
-                </a>
-                <span class="f">中時電子報 (新聞發布)</span>
-                <br>
             </td>
             <td valign="top" style="padding:2px 0 0 8px;font-size:77%;text-align:center">
-                <a href="/url?q=https://technews.tw/2018/03/16/the-leader-of-5g-tech-ericsson-will-help-chonghwa-telecom-to-5g-network-possible-in-the-end-of-2018/&amp;sa=U&amp;ved=0ahUKEwiKoNqI4ILaAhXJNJQKHTaGDDYQpwIIKzAD&amp;usg=AOvVaw2qTG0mHwOD0OfJmmFsrFYI">
-                    <img class="th" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrMsQNX2LyHSetooCdTMB0_1t5sOqPedGKDDCqww8dvG2bsvCUzjrO13Ku801WhK1JleQpVGQ"
+                <a href="/url?q=https://newtalk.tw/news/view/2018-03-24/118588&amp;sa=U&amp;ved=0ahUKEwjx29Dv-obaAhUDF5QKHbDFDdMQpwIIPjAF&amp;usg=AOvVaw05tVqqiImowjzQaHl9w5ZR">
+                    <img class="th" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVlSNRzZj54mO-2pD3RbsjuEvv6PKjzWVWuqLLh_74N0DtUpAmt-jK8_ttH7HH8MPqE9DHGyI"
                         border="1">
                 </a>
-                <div class="f">科技新報 TechNews</div>
+                <div class="f">新頭殼</div>
             </td>
         </tr>
     </table>
