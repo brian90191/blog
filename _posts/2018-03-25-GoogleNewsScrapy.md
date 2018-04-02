@@ -30,7 +30,7 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
 ~~~
 
 
-- **實際爬蟲抓到的html**
+- **爬蟲抓到的html**
 
 ~~~html
 <div class="g">
@@ -61,7 +61,7 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
 </div>
 ~~~
 
-- **可運作的程式碼**
+- **Python程式碼**
 
 ~~~python
 import requests
@@ -109,7 +109,7 @@ if res.status_code == 200:
         })
 ~~~
 
-以下為幾個關鍵
+以下為幾個關鍵語法
 - **url encode**
 ~~~python
 keyword = quote('"柯文哲"'.encode('utf8'))
@@ -132,7 +132,8 @@ news_link = urlparse.parse_qs(parsed.query)['q'][0]
 ~~~
 使用 `urlparse` 解析url 以及 `parse_qs` 函數擷取query參數，拿到的結果會是一個陣列所以要指定index來取得值。
 
-初學Python，盡量把學習的一些紀錄記下來，希望對於學習爬蟲及需要爬Google新聞的人有一些幫助。
+Try it!
+希望對於學習爬蟲及需要爬Google新聞的人有一些幫助。
 
 
 [GoogleNews]: https://news.google.com/news/search/section/q/NBA/NBA?hl=zh-tw&gl=TW&ned=zh-tw_tw
