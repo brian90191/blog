@@ -18,7 +18,7 @@ It provides the search function on blog.
 
 It provides the discussion and recommendation for each post on blog.
 
-## 3.leancloudin
+## 3.leancloud
 
 <https://leancloud.cn/>
 
