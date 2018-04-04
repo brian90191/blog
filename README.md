@@ -18,9 +18,8 @@ It provides the search function on blog.
 
 It provides the discussion and recommendation for each post on blog.
 
-And I added the visit counter for posts.
 ## 3.leancloudin
 
 <https://leancloud.cn/>
 
-Show and automatically count visited amount for every posts.
+I added the visit counter for posts to show and automatically count visited amount for every posts.
