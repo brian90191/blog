@@ -9,16 +9,16 @@ layout: default
             <p class="post-meta">
                 <span class="octicon octicon-clock"></span> {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
             </p>
+            {% if site.leancloud.enable %}
             <p class="post-meta">
-                <span id="http://www.cloudchou.com" class="leancloud_visitors meta_data_item" data-flag-title="">
-                    <span class="post-meta-item-icon">
-                        <span class="octicon octicon-eye"></span>
-                    </span>
+                <span id="{{ page.url }}" class="add_leancloud_visitors" data-flag-title="{{ page.title }}">
+                    <span class="octicon octicon-eye"></span>
                     <span class="old-visitors-count" style="display: none;"></span>
                     <span class="leancloud-visitors-count"></span>
                     <span class="post-meta-item-text">次瀏覽</span>
                 </span>
             </p>
+            {% endif %}
             <p class="post-tag">
                 <span>{% for cat in page.categories %}<a href="{{ '/category' | prepend: site.baseurl | prepend: site.url }}/#{{ cat }}"><span class="octicon octicon-list-unordered"></span>&nbsp;{{ cat }}</a>{% endfor %}</span>
                 <span>{% for tag in page.tags %}

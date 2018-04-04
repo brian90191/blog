@@ -1,5 +1,5 @@
 ---
-title: 使用Python爬抓取Google新聞
+title: 使用Python抓取Google新聞
 tags: Pthon Scrapy BeautifulSoup
 categories: Python
 ---
