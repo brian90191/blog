@@ -11,16 +11,6 @@ layout: default
             <article>
                 <header>
                     <a href="{{ site.baseurl | prepend: site.url  }}/archive/#{{ post.date | date: '%Y-%m-%d' }}"><span class="octicon octicon-calendar"></span>&nbsp;<span>{{ post.date | date: "%Y-%m-%d" }}</span></a>
-                    <p class="post-meta">
-                        <span id="http://www.cloudchou.com" class="leancloud_visitors meta_data_item" data-flag-title="">
-                            <span class="post-meta-item-icon">
-                                <span class="octicon octicon-eye"></span>
-                            </span>
-                            <span class="old-visitors-count" style="display: none;"></span>
-                            <span class="leancloud-visitors-count"></span>
-                            <span class="post-meta-item-text">次瀏覽</span>
-                        </span>
-                    </p>
                 </header>
                 <div class="module">
                   <a class="title" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
@@ -33,6 +23,13 @@ layout: default
                       <a class="word-keep" href="{{ site.baseurl | prepend: site.url }}/tags/#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
                       {% endfor %}
                       <span class="word-keep pull-right">
+                          {% if site.leancloud.enable %}
+                          <span id="{{ post.url }}" class="show_leancloud_visitors counter" data-flag-title="{{ page.title }}">
+                            <span class="octicon octicon-eye"></span>
+                            <span class="old-visitors-count" style="display: none;"></span>
+                            <span class="leancloud-visitors-count"></span>
+                          </span>
+                          {% endif %}
                           <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-comment"><span class="octicon octicon-comment"></span>&nbsp;Comment</a>
                           <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}#post-share"><span class="octicon octicon-file-symlink-file"></span>&nbsp;Share</a>
                       </span>
