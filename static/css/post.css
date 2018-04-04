@@ -39,9 +39,10 @@
     display: inline-block;
     background: #2ca6cb;
     color: #fff;
-    padding: 2px 5px 0px 5px;
+    padding: 1px 5px 1px 5px;
     border: 1px solid #2ca6cb;
     margin-top: 2px;
+    border-radius: 3px;
 }
 
 .post img{
