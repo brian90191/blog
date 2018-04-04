@@ -1,34 +1,18 @@
-##[点我查看中文说明](https://github.com/dubuyuye/blog/blob/gh-pages/README_zh_CN.md)
 
-# Blog Address
+# My Blog Address
+<https://brian90191.github.io/blog/>
+It's forked from WakelessDragon/blog
 
-<http://blog.rainyalley.com/>
-
-
-# Must Modify
-
+The blog include these third party add-in, you can refer to rainy alley's repository for detail. 
 ## 1.swiftype
-
-This service provides the on-site search function.
-
-Service address： <https://swiftype.com/>.
-
-After the setup is complete， you need to modify the `swiftype_searchId` in `_config.yml`.
-
-In your swiftype engine, go to `Setup and integration` -> `Install Search`, you could find the `swiftype_searchId`.
-
-```html
-<script type="text/javascript">
-...
-...
-  _st('install','swiftype_searchId','2.0.0');
-</script>
-```
+<https://swiftype.com/>
+It provides the search function on blog.
 
 ## 2.disqus
+<https://disqus.com/>
+It provides the discussion and recommendation for each post on blog.
 
-This service provides the comment function.
-
-Service address： <https://disqus.com/>.
-
-After the setup is complete， you need to modify the `disqus_shortname` in `_config.yml`.
+And I added the visit counter for posts.
+## 3.leancloudin
+<https://leancloud.cn/>
+Show and automatically count visited amount for every posts.
