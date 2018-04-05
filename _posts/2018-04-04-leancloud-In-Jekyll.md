@@ -1,5 +1,5 @@
 ---
-title: 在Jekyll上使用LeanCloud統計點擊人數
+title: 在Jekyll上使用LeanCloud統計訪問人數
 tags: Jekyll LeanCloud
 categories: Blog
 ---
@@ -19,10 +19,11 @@ categories: Blog
 
 - **[LeanCloud]**
 
-    這是這次要介紹的套件，可以實現對部落格的進行統計點擊人數
+    這是這次要介紹的套件，可以實現對部落格的進行統計訪問人數
+
 
 LeanCloud提供了雲端資料儲存、資料分析、即時訊息推播...等服務，是一個強大的後端平台，那我這次會使用的為它的儲存庫、還有其API的功能，能讓我們把資料從blog往儲存庫送。
-這次最終要實現的為在文章上顯示點擊次數，並且在進入文章時能夠增加次數並儲存。
+這次最終要實現的為在文章上顯示訪問次數，並且在進入文章時能夠增加次數並儲存。
 
 # 註冊LeanCloud及建立應用
 首先要先註冊自己的LeanCloud帳號， 並且建立應用，完成後在設置底下會拿得一組`App ID`及`App Key`，這會在後續設定blog時使用。
@@ -32,7 +33,7 @@ LeanCloud提供了雲端資料儲存、資料分析、即時訊息推播...等�
 ![register][register]
 
 # 建立Class
-`Class`就是我們會拿來放點擊人數資料的地方，名稱後續會在blog撰寫API介接時使用，所以最好是有意義的命名，權限則採用預設的限制寫入。
+`Class`就是我們會拿來放訪問人數資料的地方，名稱後續會在blog撰寫API介接時使用，所以最好是有意義的命名，權限則採用預設的限制寫入。
 
 ![createApp][createClass]
 
@@ -55,7 +56,7 @@ leancloud:
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
 <script>
-    //顯示點擊數
+    //顯示訪問數
     function showHitCount(Counter) {
         var query = new AV.Query(Counter);
         var entries = [];
@@ -92,7 +93,7 @@ leancloud:
                     console.log("Error: " + error.code + " " + error.message);
                 });
     }
-    //增加點擊數
+    //增加訪問數
     function addCount(Counter) {
         var $visitors = $(".add_leancloud_visitors");
         var url = $visitors.attr('id').trim();
@@ -141,10 +142,10 @@ leancloud:
     }
     $(function() {
         var Counter = AV.Object.extend("Counter");
-        if ($('.add_leancloud_visitors').length == 1) {
+        if ($('.add_leancloud_visitors').length >= 1) {
             // add 1 for counter
             addCount(Counter);
-        } else if ($('.show_leancloud_visitors').length == 1){
+        } else if ($('.show_leancloud_visitors').length >= 1){
             // show counter
             showHitCount(Counter);
         }
@@ -156,9 +157,9 @@ leancloud:
 
 ![include-leancloud-analytics][include-leancloud-analytics]
 
-# 顯示點擊數
+# 顯示訪問數
 
-在post.html內要顯示點擊數的位置新增如下html
+在post.html內要顯示訪問數的位置新增如下html
 
 ~~~html
 <span id="{{ page.url }}" class="add_leancloud_visitors" data-flag-title="{{ page.title }}">
@@ -169,13 +170,13 @@ leancloud:
 </span>
 ~~~
 
-這邊要注意的是span的class名稱是add_leancloud_visitors，因為當閱讀者進入到文章內顯示點擊數以外，系統也需要同步新增點擊數，所以需調用新增點擊數的函式，如只是單純顯示，像是在外面的文章列表不需要自動增加，則可以修改為show_leancloud_visitors。
+這邊要注意的是span的class名稱是add_leancloud_visitors，因為當閱讀者進入到文章內顯示訪問數以外，系統也需要同步新增訪問數，所以需調用新增訪問數的函式，如只是單純顯示，像是在外面的文章列表不需要自動增加，則可以修改為show_leancloud_visitors。
 
-而id拿到的url則是文章的位址，會將此url紀錄在LeanCloud上，下次有讀者進入到同一個文章時，就新增同一個url的點擊數。
+而id拿到的url則是文章的位址，會將此url紀錄在LeanCloud上，下次有讀者進入到同一個文章時，就新增同一個url的訪問數。
 
 ![result][result]
 
-成功後在LeanCloud上我所新增的class下面，就會開始記錄被點擊的資料，title、url、hits是我要關注的資訊，當然如果有其他資訊是需要被關注的，可以於JS程式碼新增欄位和值。
+成功後在LeanCloud上我所新增的class下面，就會開始記錄被訪問的資料，title、url、hits是我要關注的資訊，當然如果有其他資訊是需要被關注的，可以於JS程式碼新增欄位和值。
 ![counterData][counterData]
 
 Try it!
