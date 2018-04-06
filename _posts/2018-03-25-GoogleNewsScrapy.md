@@ -1,6 +1,6 @@
 ---
 title: 使用Python抓取Google新聞
-tags: Pthon Scrapy BeautifulSoup
+tags: Scrapy BeautifulSoup
 categories: Python
 ---
 

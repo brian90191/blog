@@ -55,7 +55,7 @@ layout: default
                 <span class="octicon octicon-list-unordered"></span>&nbsp;Tags
             </div>
             <div class="content-navigation-list">
-                <ul>
+                <ul id="tag-ul">
                     {% for tag in page.tags %}
                     <li>
                         <a href="{{ '/tags' | prepend: site.baseurl | prepend: site.url }}#{{ tag }}"><span class="octicon octicon-tag"></span>&nbsp;{{ tag }}</a>
