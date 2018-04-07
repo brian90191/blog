@@ -1,0 +1,17 @@
+<div id="about" class="shadow-bottom-center">
+        <div class="content-navigation-toc">
+            <div class="content-navigation-header">
+                {{ site.author }}
+            </div>
+            <div class="content-navigation-list">
+                <img class="about-img" src="{{ '/static/img/about-img.jpg' | prepend: site.baseurl | prepend: site.url }}"/>
+            </div>
+            <div class="about-share">
+                    <p class="navbar-text">{{ site.description }}</p>
+                    <a class="about-share-item" href="mailto:{{ site.email }}" target="_blank"><span class="fa fa-envelope-o"></span></a>
+                    <a class="about-share-item" href="https://www.facebook.com/{{ site.facebook_username }}" target="_blank"><span class="fa fa-facebook"></span></a>
+                    <a class="about-share-item" href="https://github.com/{{ site.github_username }}" target="_blank"><span class="fa fa-github"></span></a>
+                    <a class="about-share-item" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" target="_blank"><span class="fa fa-rss"></span></a>        
+                </div>
+        </div>
+      </div>

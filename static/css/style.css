@@ -262,3 +262,47 @@ a:active {text-decoration: none}	/* 选定的链接 */
         font-size: 36px;
     }
 }
+
+#about{
+    margin-top: 30px;
+}
+
+#about .about-share{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+#about .about-share-item{
+    display: inline-block;
+    color: white;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.8);
+    border-radius: 3px 3px;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
+
+#about .about-share-item:hover{
+    background-color: #2ca6cb;
+    -webkit-transition: background .4s ease-in-out;
+    -moz-transition: background .4s ease-in-out;
+    -ms-transition: background .4s ease-in-out;
+    -o-transition: background .4s ease-in-out;
+    transition: background .4s ease-in-out;
+}
+
+#about .about-img{
+    width: 100%;
+    border-radius: 3px 3px;
+}
+
+#about .content-navigation-list{
+    padding: 15px 15px 15px 15px;
+}

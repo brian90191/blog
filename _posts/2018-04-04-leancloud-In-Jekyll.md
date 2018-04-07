@@ -5,7 +5,7 @@ categories: Blog
 ---
 
 * TOC
-  {:toc}
+{:toc}
 
 使用`Jekyll` + `Github Pages`建立 blog 非常方便快速，網路上也有很多教學從安裝環境、Jekyll 架構、修改方式到最後發布自己的 blog，其中很方便的是 Jekyll 支援許多第三方套件，讓我們不用自己刻的半死，例如:
 

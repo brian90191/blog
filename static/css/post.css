@@ -76,6 +76,15 @@
     white-space: pre;
 }
 
+.toc{
+    padding-right: 15px !important;
+}
+
+.tag-ul{
+    list-style: none;
+    margin-left: -15px;
+}
+
 @media screen and (min-width: 1200px){
     /**
       * 文章目录相关

@@ -27,8 +27,11 @@ defaults:
 
 title: "Brian's Try & Catch"
 email: "brian90191@gmail.com"
-description: ""
+author: "Brian Ye"
+description: "先有 Try 才有 Catch<br/>記不下的就交給技術筆記吧"
 github_username:  "brian90191"
+facebook_username: "yiwei.yeah"
+
 swiftype_searchId: "2Rgg95m4s99-q75zSfaX"
 disqus_shortname: "brianye"
 leancloud:
@@ -42,8 +45,8 @@ url: "https://brian90191.github.io/blog"
 imgrepo: "https://brian90191.github.io/blog/static/img"
 
 
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
+# url: "http://127.0.0.1:4000"
+# imgrepo: "http://127.0.0.1:4000/static/img"
 
 
 theme: jekyll-theme-cayman
