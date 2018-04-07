@@ -4,15 +4,15 @@ tags: Scrapy BeautifulSoup
 categories: Python
 ---
 
-最近有需求要做一隻Python爬蟲來抓取新聞，與其到各大網路新聞去抓，乾脆直接把腦筋動到Google上，以Google抓新聞的管道我看到有兩個，一個是[Google search的新聞頁籤][GoogleSearchNews]，另一個則是[Google新聞][GoogleNews]。
+最近有需求要做一隻 Python 爬蟲來抓取新聞，與其到各大網路新聞去抓，乾脆直接把腦筋動到 Google 上，以 Google 抓新聞的管道我看到有兩個，一個是[Google search 的新聞頁籤][googlesearchnews]，另一個則是[Google 新聞][googlenews]。
 
-Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有排序上只能完全依照google提供的(汗)。所以我最後選擇用Google Search的新聞做為資料來源。
+Google 新聞平台上沒有更多篩條件，抓下來的資料在時間還有排序上只能完全依照 google 提供的(汗)。所以我最後選擇用 Google Search 的新聞做為資料來源。
 
-不過使用Goolgle Search的新聞，發現在網頁點選右鍵檢視網頁原始碼所看到的html會與實際爬蟲抓到的不一樣，看起來Google針對這部分有把html標籤、id、class等變化過，所以在處理前必須要先了解一下爬蟲抓到的資料結構。
+不過使用 Goolgle Search 的新聞，發現在網頁點選右鍵檢視網頁原始碼所看到的 html 會與實際爬蟲抓到的不一樣，看起來 Google 針對這部分有把 html 標籤、id、class 等變化過，所以在處理前必須要先了解一下爬蟲抓到的資料結構。
 
-- **右鍵檢視網頁原始碼看到的html**
+* **右鍵檢視網頁原始碼看到的 html**
 
-~~~html
+```html
 <div class="gG0TJc">
     <h3 class="r dO0Ag">
         <a class="l lLrAF" href="https://newtalk.tw/news/view/2018-03-24/118588" ping="/url?sa=t&amp;source=web&amp;rct=j&amp;url=https://newtalk.tw/news/view/2018-03-24/118588&amp;ved=0ahUKEwimoYXH-YbaAhXLXrwKHSK4AN8QqQIIVCgAMAU">5年21個新創基地
@@ -27,12 +27,11 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
         <em>柯文哲</em>今日出席全國大專院校商業個案大賽，並指出創新是台灣唯一的出路。 圖：翻攝自Flickr/zhenghu feng開放權限. 台北市市長
         <em>柯文哲</em>今(24)日出席全國大專院校商業個案大賽( ATCC )，除與企業領袖對談外，更於致詞時表示，計劃未來每年開設2到3個新創基地，預計未來5年內，北市最少會有21個新創基地。 此次第16&nbsp;...</div>
 </div>
-~~~
+```
 
+* **爬蟲抓到的 html**
 
-- **爬蟲抓到的html**
-
-~~~html
+```html
 <div class="g">
     <table>
         <tr>
@@ -59,11 +58,11 @@ Google新聞平台上沒有更多篩條件，抓下來的資料在時間還有�
         </tr>
     </table>
 </div>
-~~~
+```
 
-- **Python程式碼**
+* **Python 程式碼**
 
-~~~python
+```python
 import requests
 from bs4 import BeautifulSoup
 from urllib import quote
@@ -107,34 +106,41 @@ if res.status_code == 200:
             "news_from": news_from,
             "time_created": time_created
         })
-~~~
+```
 
 以下為幾個關鍵語法
-- **url encode**
-~~~python
+
+* **url encode**
+
+```python
 keyword = quote('"柯文哲"'.encode('utf8'))
-~~~
+```
+
 中文字放到網址內需先進行編碼轉換，只要利用 `urllib` 的 `quote` 即可輕鬆轉換。
 
-- **findAll and find**
-~~~python
+* **findAll and find**
+
+```python
 items = soup.findAll("div", {"class": "g"})
-~~~
-~~~python
+```
+
+```python
 news_title = item.find("h3", {"class": "r"}).find("a").text
-~~~
+```
+
 指定要查詢的標籤及其要篩選的屬性和條件， `find` 和 `findAll` 的差別在於前者為回傳一筆，後者為取得多筆資料'，而使用 `.text` 可以取得其內容。
 
-- **get url query**
-~~~python
+* **get url query**
+
+```python
 parsed = urlparse.urlparse(href)
 news_link = urlparse.parse_qs(parsed.query)['q'][0]
-~~~
-使用 `urlparse` 解析url 以及 `parse_qs` 函數擷取query參數，拿到的結果會是一個陣列所以要指定index來取得值。
+```
+
+使用 `urlparse` 解析 url 以及 `parse_qs` 函數擷取 query 參數，拿到的結果會是一個陣列所以要指定 index 來取得值。
 
 Try it!
-希望對於學習爬蟲及需要爬Google新聞的人有一些幫助。
+希望對於學習爬蟲及需要爬 Google 新聞的人有一些幫助。
 
-
-[GoogleNews]: https://news.google.com/news/search/section/q/NBA/NBA?hl=zh-tw&gl=TW&ned=zh-tw_tw
-[GoogleSearchNews]: https://www.google.com.tw/search?q=NBA&num=50&dcr=0&source=lnms&tbm=nws&sa=X&ved=0ahUKEwiGwZaj0YXaAhUGkpQKHbRIBmcQ_AUICigB&biw=1163&bih=559
+[googlenews]: https://news.google.com/news/search/section/q/NBA/NBA?hl=zh-tw&gl=TW&ned=zh-tw_tw
+[googlesearchnews]: https://www.google.com.tw/search?q=NBA&num=50&dcr=0&source=lnms&tbm=nws&sa=X&ved=0ahUKEwiGwZaj0YXaAhUGkpQKHbRIBmcQ_AUICigB&biw=1163&bih=559
