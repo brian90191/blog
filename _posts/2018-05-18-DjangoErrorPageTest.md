@@ -55,7 +55,7 @@ python manage.py runserver --insecure
 
 Error 404只要亂輸入網址就好，很容易測試，但500為 `Internal Server Error`，當然是要在我們不預期的情況下發生，但如果是為了測試，則可以故意建立一個會出錯的函式。
 
-以下為會出錯的範例，然後記得在urls.py加上路徑，這樣我們就可以直接透過路徑來測試它了。
+以下為會出錯的範例，然後記得在urls.py加上路徑，這樣我們就可以透過觸發這個會出錯的功能來測試error 500。
 
 ```python
 def test_handler500(request):
