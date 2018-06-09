@@ -1,5 +1,5 @@
 ---
-title: 在Django上進行建立及測試404/500 Error Page
+title: 在Django上建立及測試404/500 Error Page
 tags: Django
 categories: Python
 ---
