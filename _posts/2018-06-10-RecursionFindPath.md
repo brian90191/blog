@@ -15,7 +15,10 @@ categories: Javascript
 
 ![sample-relations][sample-relations]
 
-```Javascript
+
+程式碼
+
+```javascript
 //sample data
 var connections = [
     {
