@@ -13,7 +13,7 @@ categories: Javascript
 
 範例的樹狀圖會長這樣
 
-![sample-relation][sample-relation]
+![sample-relations][sample-relations]
 
 ```Javascript
 //sample data
