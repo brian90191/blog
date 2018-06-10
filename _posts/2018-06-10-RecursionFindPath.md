@@ -1,5 +1,5 @@
 ---
-title: [JS]使用遞迴尋找兩點的所有路徑
+title: 使用JS及遞迴尋找兩點的所有路徑
 tags: Recursion
 categories: Javascript
 ---
